@@ -4,9 +4,9 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-7 mt-2">
-                        <h3>Sân bóng Đại Học Thể Dục Thể Thao</h3>
+                        <h3>Sân bóng Trương Vương</h3>
                         <p><i class="fa-solid fa-location-dot fa-xl"></i>
-                            44 Dũng Sĩ Thanh Khê Đông, Quận Thanh Khuê, Đà Nẵng</p>
+                            200 Cách Mạng Tháng Tám, Quận Cẩm Lệ, Đà Nẵng</p>
                     </div>
                     <div class="col-5 mt-4 text-end">
                         <h4>Đánh giá 5/5<i class="bx bxs-star text-warning"></i>(555 Đánh giá )</h4>
@@ -87,10 +87,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex mt-3 ">
-                                <a href="#" class="btn btn-outline-primary"><span class="text-center">Đặt Sân
-                                        Ngay</span></a>
-                            </div>
+                            <router-link to="xac-nhan-dat-san">
+                                <div class="d-flex mt-3 ">
+                                    <a href="#" class="btn btn-outline-primary"><span class="text-center">Đặt Sân
+                                            Ngay</span></a>
+                                </div>
+                            </router-link>
                         </div>
                     </div>
                 </div>
@@ -113,7 +115,9 @@
                     </div>
                     <input type="text" class="form-control rounded-pill mt-2" placeholder="Nhập số giờ thuê">
                     <textarea class="form-control" placeholder="Ghi chú" rows="4"></textarea>
+                    <router-link to="xac-nhan-dat-san">
                     <button class=" btn btn-warning mt-3 w-100 rounded-pill mb-3">Đặt sân ngay</button>
+                </router-link>
 
                 </form>
             </div>
@@ -215,6 +219,242 @@
                         <button class="btn btn-info" style="font-size:14px;">16:00-17:00 <h6>Giá 550K</h6></button>
                     </div>
                 </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-2">
+        <div class="card">
+            <div class="card-header mt-3">
+                <h3>Sân thể thao gần đây</h3>
+            </div>
+            <div class="card-body">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-4 product-grid">
+                    <div class="col  ">
+
+                        <div class="card m-3 border-4 border-danger " style="border-radius: 30px;">
+                            <img src="https://img.thegioithethao.vn/thumbs/san-bong-da/ha-noi/hoang-mai/hong-quang/san-bong-hong-quang-3_thumb_500.webp"
+                                class="card-img-top" style="border-radius: 30px;" alt="...">
+
+                            <div class="card-body">
+                                <h6 class="card-title cursor-pointer">Sân bóng Đa Phước</h6>
+                                <h7 class="card-title cursor-pointer">Khu Vực: Thanh Khê</h7>
+                                <h7 class="card-title cursor-pointer">
+                                    <p>Số sân: 10</p>
+                                </h7>
+                                <h5 class="card-title cursor-pointer mt-1">Giá : 350.000đ</h5>
+
+                                <div class="d-flex align-items-center mt-3 fs-6">
+                                    <div class="cursor-pointer">
+                                        <i class="bx bxs-star text-warning"></i>
+                                        <i class="bx bxs-star text-warning"></i>
+                                        <i class="bx bxs-star text-warning"></i>
+                                        <i class="bx bxs-star text-warning"></i>
+                                        <i class="bx bxs-star text-secondary"></i>
+                                    </div>
+                                    <p class="mb-0 ms-auto">4.2(182)</p>
+                                </div>
+                                <div class=" mt-2 text-center ">
+                                    <router-link to="/chi-tiet-dat-san">
+                                        <button class=" btn btn-info w-100 " style="border-radius: 20px;">Đặt ngay kẻo
+                                            muộn</button>
+                                    </router-link>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col ">
+                        <div class="card m-3 border-4 border-danger" style="border-radius: 30px;">
+                            <img src="https://www.tapdoanconhantao.com/wp-content/uploads/2018/08/co-nhan-tao-san-bong.png"
+                                class="card-img-top" style="border-radius: 30px;" alt="...">
+
+                            <div class="card-body">
+                                <h6 class="card-title cursor-pointer">Sân bóng Sao</h6>
+                                <h7 class="card-title cursor-pointer">Khu Vực: Liên Chiểu</h7>
+                                <h7 class="card-title cursor-pointer">
+                                    <p>Số sân: 5</p>
+                                </h7>
+                                <h5 class="card-title cursor-pointer mt-1">Giá : 400.000đ</h5>
+
+                                <div class="d-flex align-items-center mt-3 fs-6">
+                                    <div class="cursor-pointer">
+                                        <i class="bx bxs-star text-warning"></i>
+                                        <i class="bx bxs-star text-warning"></i>
+                                        <i class="bx bxs-star text-warning"></i>
+                                        <i class="bx bxs-star text-secondary"></i>
+                                        <i class="bx bxs-star text-secondary"></i>
+                                    </div>
+                                    <p class="mb-0 ms-auto">3.1(83)</p>
+                                </div>
+                                <div class=" mt-2 text-center ">
+                                    <router-link to="/chi-tiet-dat-san2">
+                                        <button class=" btn btn-info w-100 " style="border-radius: 20px;">Đặt ngay kẻo
+                                            muộn</button>
+                                    </router-link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="card m-3 border-4 border-danger" style="border-radius: 30px;">
+                            <img src="https://images.toplist.vn/images/800px/san-bong-mini-chao-lua-896266.jpg"
+                                class="card-img-top" style="border-radius: 30px;" alt="...">
+
+                            <div class="card-body">
+                                <h6 class="card-title cursor-pointer">Sân bóng Nam Sao</h6>
+                                <h7 class="card-title cursor-pointer">Khu Vực: Liên Chiểu</h7>
+                                <h7 class="card-title cursor-pointer">
+                                    <p>Số sân: 2</p>
+                                </h7>
+                                <h5 class="card-title cursor-pointer mt-1">Giá : 250.000đ</h5>
+
+                                <div class="d-flex align-items-center mt-3 fs-6">
+                                    <div class="cursor-pointer">
+                                        <i class="bx bxs-star text-warning"></i>
+                                        <i class="bx bxs-star text-warning"></i>
+                                        <i class="bx bxs-star text-secondary"></i>
+                                        <i class="bx bxs-star text-secondary"></i>
+                                        <i class="bx bxs-star text-secondary"></i>
+                                    </div>
+                                    <p class="mb-0 ms-auto">1.5(45)</p>
+                                </div>
+                                <div class=" mt-2 text-center ">
+                                    <button class=" btn btn-info w-100 " style="border-radius: 20px;">Đặt ngay kẻo
+                                        muộn</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card m-3 border-4 border-danger" style="border-radius: 30px;">
+                            <img src="https://thegioiconhantao.com.vn/wp-content/uploads/2017/06/du-an-san-bong-tri-ton-an-giang2.png"
+                                class="card-img-top" style="border-radius: 30px;" alt="...">
+
+                            <div class="card-body">
+                                <h6 class="card-title cursor-pointer">Sân bóng Đa Phước 2</h6>
+                                <h7 class="card-title cursor-pointer">Khu Vực: Thanh Khê</h7>
+                                <h7 class="card-title cursor-pointer">
+                                    <p>Số sân: 5</p>
+                                </h7>
+                                <h5 class="card-title cursor-pointer mt-1">Giá : 350.000đ</h5>
+
+                                <div class="d-flex align-items-center mt-3 fs-6">
+                                    <div class="cursor-pointer">
+                                        <i class="bx bxs-star text-warning"></i>
+                                        <i class="bx bxs-star text-warning"></i>
+                                        <i class="bx bxs-star text-warning"></i>
+                                        <i class="bx bxs-star text-warning"></i>
+                                        <i class="bx bxs-star text-secondary"></i>
+                                    </div>
+                                    <p class="mb-0 ms-auto">4.2(182)</p>
+                                </div>
+                                <div class=" mt-2 text-center ">
+                                    <button class=" btn btn-info w-100 " style="border-radius: 20px;">Đặt ngay kẻo
+                                        muộn</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card">
+            <div class="card-header mt-2">
+                <h4>Đánh giá sân thể thao</h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h5 class="ms-5 mt-2">Trung Bình</h5>
+                        <div class="ms-5 mt-3">
+                            <h2>5.0 <i class="bx bxs-star text-warning"></i></h2>
+                        </div>
+                        <div class="d-flex ms-2 mt-4 ">
+                            <a href="#" class="btn btn-outline-primary"><span class="text-center">Đánh giá & Nhận xét</span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="d-flex align-items-center fs-4 ">
+                            <div class="cursor-pointer">
+                                <i class="bx bxs-star text-warning"></i>
+                                <i class="bx bxs-star text-warning"></i>
+                                <i class="bx bxs-star text-warning"></i>
+                                <i class="bx bxs-star text-warning"></i>
+                                <i class="bx bxs-star text-warning"></i>
+
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center fs-4 ">
+                            <div class="cursor-pointer">
+                                <i class="bx bxs-star text-warning"></i>
+                                <i class="bx bxs-star text-warning"></i>
+                                <i class="bx bxs-star text-warning"></i>
+                                <i class="bx bxs-star text-warning"></i>
+                                <i class="bx bxs-star text-secondary"></i>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center fs-4 ">
+                            <div class="cursor-pointer">
+                                <i class="bx bxs-star text-warning"></i>
+                                <i class="bx bxs-star text-warning"></i>
+                                <i class="bx bxs-star text-warning"></i>
+                                <i class="bx bxs-star text-secondary"></i>
+                                <i class="bx bxs-star text-secondary"></i>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center fs-4 ">
+                            <div class="cursor-pointer">
+                                <i class="bx bxs-star text-warning"></i>
+                                <i class="bx bxs-star text-warning"></i>
+                                <i class="bx bxs-star text-secondary"></i>
+                                <i class="bx bxs-star text-secondary"></i>
+                                <i class="bx bxs-star text-secondary"></i>
+                            </div>
+                        </div>
+                        <div class="mt-1 d-flex align-items-center fs-4 ">
+                            <div class="cursor-pointer">
+                                <i class="bx bxs-star text-warning"></i>
+                                <i class="bx bxs-star text-secondary"></i>
+                                <i class="bx bxs-star text-secondary"></i>
+                                <i class="bx bxs-star text-secondary"></i>
+                                <i class="bx bxs-star text-secondary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="progress mt-2">
+                            <div style="width: 0%;" class="progress-bar progress-bar-warning"></div>
+                            <div class="star-percent "><span>25</span>%</div>
+                        </div>
+                        <div class="progress mt-4">
+                            <div style="width: 0%;" class="progress-bar progress-bar-warning"></div>
+                            <div class="star-percent "><span>20</span>%</div>
+                        </div>
+                        <div class="progress mt-4">
+                            <div style="width: 0%;" class="progress-bar progress-bar-warning"></div>
+                            <div class="star-percent "><span>15</span>%</div>
+                        </div>
+                        <div class="progress mt-4">
+                            <div style="width: 0%;" class="progress-bar progress-bar-warning"></div>
+                            <div class="star-percent "><span>10</span>%</div>
+                        </div>
+                        <div class="progress mt-4">
+                            <div style="width: 0%;" class="progress-bar progress-bar-warning"></div>
+                            <div class="star-percent "><span>5</span>%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="progress"><div style="width: 0%;" class="progress-bar progress-bar-warning"></div></div>
+                <div class="star-percent"><span>0</span>%</div> -->
 
             </div>
         </div>

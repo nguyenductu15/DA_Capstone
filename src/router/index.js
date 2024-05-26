@@ -27,6 +27,11 @@ const routes = [
         component: () => import('../components/Admin/NhanVien/index.vue'),
         meta: { layout: "Ad" },
     },
+    {
+        path: '/admin/khach-hang',
+        component: () => import('../components/Admin/KhachHang/index.vue'),
+        meta: { layout: "Ad" },
+    },
     //quan li san
     {
         path: '/admin/quan-li-san',
@@ -43,12 +48,7 @@ const routes = [
         path: '/chi-tiet-dat-san2',
         component: () => import('../components/Client/ChiTietDatSan2/index.vue')
     },
-    //dang ki
-    {
-        path: '/admin/dang-ky',
-        component: () => import('../components/Admin/DangKy/index.vue'),
-        meta: { layout: "Ad" },
-    },
+    
     //dang nhap
     {
         path: '/admin/dang-nhap',
@@ -71,6 +71,11 @@ const routes = [
     {
         path: '/xac-nhan-dat-san',
         component: () => import('../components/Client/XacNhanDatSan/index.vue')
+    },
+    {
+        path: '/khach-hang/dang-ky',
+        component: () => import('../components/Client/DangKy/index.vue'),
+        meta: { layout: 'auth' }
     },
 ]
 

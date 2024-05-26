@@ -19,13 +19,19 @@
                                 </div>
                                 <div class="modal-body">
                                     <div class="mb-2"><label>Tên Sân</label>
-                                        <input v-model="san_bong_create.ten_san" type="text" class="form-control mt-2"></div>
+                                        <input v-model="san_bong_create.ten_san" type="text" class="form-control mt-2">
+                                    </div>
                                     <div class="mb-2"><label>Địa Chỉ</label>
-                                        <input v-model="san_bong_create.dia_chi" type="text" class="form-control mt-2"></div>
+                                        <input v-model="san_bong_create.dia_chi" type="text" class="form-control mt-2">
+                                    </div>
                                     <div class="mb-2"><label>Số Sân Kinh Doanh</label>
-                                        <input v-model="san_bong_create.so_san_kinh_doanh" type="text" class="form-control mt-2"></div>
+                                        <input v-model="san_bong_create.so_san_kinh_doanh" type="text"
+                                            class="form-control mt-2">
+                                    </div>
                                     <div class="mb-2"><label>Giá Mặc Định</label>
-                                        <input v-model="san_bong_create.gia_mac_dinh" type="number" class="form-control mt-2"></div>
+                                        <input v-model="san_bong_create.gia_mac_dinh" type="number"
+                                            class="form-control mt-2">
+                                    </div>
                                     <div class="mb-2"><label>Tình Trạng</label>
                                         <select v-model="san_bong_create.tinh_trang" class="form-control">
                                             <option value="1">Hoạt Động</option>
@@ -35,8 +41,8 @@
                                 </div>
                                 <div class="modal-footer"><button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary" 
-                                        data-bs-dismiss="modal" v-on:click="TaoMoiSanBong()">Thêm Mới</button>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                                        v-on:click="TaoMoiSanBong()">Thêm Mới</button>
                                 </div>
                             </div>
                         </div>
@@ -68,22 +74,28 @@
                             <tbody>
                                 <template v-for="(value, index) in ds_san_bong" :key="index">
                                     <tr class="align-middle">
-                                    <th class="text-center ">{{ index + 1 }}</th>
-                                    <td class="text-center ">{{ value.ten_san }}</td>
-                                    <td class="text-center ">{{ value.dia_chi }}</td>
-                                    <td class="text-center">{{ value.so_san_kinh_doanh }}</td>
-                                    <td class="text-center">{{ value.gia_mac_dinh }}</td>
-                                    <td class="text-center">
-                                        <button v-if="value.tinh_trang == 1" class="btn btn-primary">Hoạt Động</button>
-                                        <button v-if="value.tinh_trang == 0" class="btn btn-warning">Tạm Dừng</button>
-                                    </td>
-                                    <td class="text-center d-flex justify-content-center">
-                                        <button data-bs-toggle="modal" data-bs-target="#updateModal" class="btn btn-success btn-sm me-1" v-on:click="Object.assign(san_bong_update, value)">Cập Nhập</button>
-                                            <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="btn btn-danger btn-sm px-4" v-on:click="id_can_xoa = value.id">Xóa</button>
-                                    </td>
-                                </tr>
+                                        <th class="text-center ">{{ index + 1 }}</th>
+                                        <td class="text-center ">{{ value.ten_san }}</td>
+                                        <td class="text-center ">{{ value.dia_chi }}</td>
+                                        <td class="text-center">{{ value.so_san_kinh_doanh }}</td>
+                                        <td class="text-center">{{ value.gia_mac_dinh }}</td>
+                                        <td class="text-center">
+                                            <button v-if="value.tinh_trang == 1" v-on:click="doiTrangThai(value)"
+                                                class="btn btn-primary">Hoạt Động</button>
+                                            <button v-else v-on:click="doiTrangThai(value)" class="btn btn-warning">Tạm
+                                                Dừng</button>
+                                        </td>
+                                        <td class="text-center d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#updateModal"
+                                                class="btn btn-success btn-sm me-1"
+                                                v-on:click="Object.assign(san_bong_update, value)">Cập Nhập</button>
+                                            <button data-bs-toggle="modal" data-bs-target="#deleteModal"
+                                                class="btn btn-danger btn-sm px-4"
+                                                v-on:click="id_can_xoa = value.id">Xóa</button>
+                                        </td>
+                                    </tr>
                                 </template>
-                                 
+
                             </tbody>
                         </table>
                     </div>
@@ -102,7 +114,8 @@
                                 </div>
                                 <div class="modal-footer"><button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Close</button><button type="button"
-                                        class="btn btn-danger" data-bs-dismiss="modal" v-on:click="XoaSanBong()">Xác Nhận Xoá</button></div>
+                                        class="btn btn-danger" data-bs-dismiss="modal" v-on:click="XoaSanBong()">Xác
+                                        Nhận Xoá</button></div>
                             </div>
                         </div>
                     </div>
@@ -117,13 +130,19 @@
                                 </div>
                                 <div class="modal-body">
                                     <div class="mb-2"><label>Tên Sân</label>
-                                        <input v-model="san_bong_update.ten_san" type="text" class="form-control mt-2"></div>
+                                        <input v-model="san_bong_update.ten_san" type="text" class="form-control mt-2">
+                                    </div>
                                     <div class="mb-2"><label>Địa Chỉ</label>
-                                        <input v-model="san_bong_update.dia_chi" type="text" class="form-control mt-2"></div>
+                                        <input v-model="san_bong_update.dia_chi" type="text" class="form-control mt-2">
+                                    </div>
                                     <div class="mb-2"><label>Số Sân Kinh Doanh</label>
-                                        <input v-model="san_bong_update.so_san_kinh_doanh" type="text" class="form-control mt-2"></div>
+                                        <input v-model="san_bong_update.so_san_kinh_doanh" type="text"
+                                            class="form-control mt-2">
+                                    </div>
                                     <div class="mb-2"><label>Giá Mặc Định</label>
-                                        <input v-model="san_bong_update.gia_mac_dinh" type="number" class="form-control mt-2"></div>
+                                        <input v-model="san_bong_update.gia_mac_dinh" type="number"
+                                            class="form-control mt-2">
+                                    </div>
                                     <div class="mb-2"><label>Tình Trạng</label>
                                         <select v-model="san_bong_update.tinh_trang" class="form-control">
                                             <option value="1">Hoạt Động</option>
@@ -133,8 +152,9 @@
                                 </div>
                                 <div class="modal-footer"><button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-info"
-                                        data-bs-dismiss="modal" v-on:click="CapNhatSanBong()">Cập Nhật</button>
+                                    <button type="button" class="btn btn-info" data-bs-dismiss="modal"
+                                        v-on:click="CapNhatSanBong()">Cập
+                                        Nhật</button>
                                 </div>
                             </div>
                         </div>
@@ -151,10 +171,10 @@ const toaster = createToaster({ position: "top-right" });
 export default {
     data() {
         return {
-            ds_san_bong          : [],
-            san_bong_create      : {},
-            san_bong_update      : {},
-            id_can_xoa :0, 
+            ds_san_bong: [],
+            san_bong_create: {},
+            san_bong_update: {},
+            id_can_xoa: 0,
         }
     },
     mounted() {
@@ -195,6 +215,18 @@ export default {
                     if (res.data.status == true) {
                         toaster.success(res.data.message)
                         this.LayDuLieu();
+                    }
+                })
+        },
+        doiTrangThai(values) {
+            axios
+                .put('http://127.0.0.1:8000/api/san-bong/doi-trang-thai', values)
+                .then((res) => {
+                    if (res.data.status == true) {
+                        toaster.success(res.data.message)
+                        this.LayDuLieu();
+                    } else {
+                        toaster.error(res.data.message)
                     }
                 })
         },

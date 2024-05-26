@@ -117,7 +117,7 @@
                         <p class="mb-0 ms-auto">4.2(182)</p>
                     </div>
                     <div class=" mt-2 text-center ">
-                        <router-link to="/chi-tiet-dat-san">
+                        <router-link to="/chi-tiet-dat-san2">
                             <button class=" btn btn-info w-100 " style="border-radius: 20px;">Đặt ngay kẻo muộn</button>
                         </router-link>
                     </div>
@@ -151,7 +151,9 @@
                         <p class="mb-0 ms-auto">4.5(190)</p>
                     </div>
                     <div class=" mt-2 text-center ">
+                        <router-link to="/chi-tiet-dat-san2">
                         <button class=" btn btn-info w-100 " style="border-radius: 20px;">Đặt ngay kẻo muộn</button>
+                        </router-link>
                     </div>
                 </div>
             </div>
@@ -180,7 +182,9 @@
                         <p class="mb-0 ms-auto">3.1(83)</p>
                     </div>
                     <div class=" mt-2 text-center ">
+                        <router-link to="/chi-tiet-dat-san2">
                         <button class=" btn btn-info w-100 " style="border-radius: 20px;">Đặt ngay kẻo muộn</button>
+                        </router-link>                    
                     </div>
                 </div>
             </div>
@@ -331,6 +335,122 @@
                 </div>
             </div>
         </div>
+        <div class="col">
+            <div class="card m-3 border-4 border-danger" style="border-radius: 30px;">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipN67Uw_GWERQG7gAo-FW1uUuZHtCaAEnHQme_Me=s1360-w1360-h1020"
+                    class="card-img-top" style="border-radius: 30px;" alt="...">
+
+                <div class="card-body">
+                    <h6 class="card-title cursor-pointer">Trung Tâm Bóng Đá Duy Tân </h6>
+                    <h7 class="card-title cursor-pointer">Khu Vực: Hải Châu</h7>
+                    <h7 class="card-title cursor-pointer">
+                        <p>Số sân: 10</p>
+                    </h7>
+                    <h5 class="card-title cursor-pointer mt-1">Giá : 700.000đ</h5>
+
+                    <div class="d-flex align-items-center mt-3 fs-6">
+                        <div class="cursor-pointer">
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                        </div>
+                        <p class="mb-0 ms-auto">5.0(1105)</p>
+                    </div>
+                    <div class=" mt-2 text-center ">
+                        <button class=" btn btn-info w-100 " style="border-radius: 20px;">Đặt ngay kẻo muộn</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card m-3 border-4 border-danger" style="border-radius: 30px;">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipOH6SecHTPZ0kMXax3r8f2tB9YaU4BfDoUZSNMY=s1360-w1360-h1020"
+                    class="card-img-top" style="border-radius: 30px;" alt="...">
+
+                <div class="card-body">
+                    <h6 class="card-title cursor-pointer">Sân bóng Trang Hoàng</h6>
+                    <h7 class="card-title cursor-pointer">Khu Vực: Hải Châu</h7>
+                    <h7 class="card-title cursor-pointer">
+                        <p>Số sân: 10</p>
+                    </h7>
+                    <h5 class="card-title cursor-pointer mt-1">Giá : 400.000đ</h5>
+
+                    <div class="d-flex align-items-center mt-3 fs-6">
+                        <div class="cursor-pointer">
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-secondary"></i>
+                        </div>
+                        <p class="mb-0 ms-auto">4.1(500)</p>
+                    </div>
+                    <div class=" mt-2 text-center ">
+                        <button class=" btn btn-info w-100 " style="border-radius: 20px;">Đặt ngay kẻo muộn</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card m-3 border-4 border-danger" style="border-radius: 30px;">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipNv0vfds8B3ZhC9EK075DcEXeMseJVqevEVNSfu=s1360-w1360-h1020"
+                    class="card-img-top" style="border-radius: 30px;" alt="...">
+
+                <div class="card-body">
+                    <h6 class="card-title cursor-pointer">Sân bóng Phan Tứ</h6>
+                    <h7 class="card-title cursor-pointer">Khu Vực: Ngũ Hành Sơn</h7>
+                    <h7 class="card-title cursor-pointer">
+                        <p>Số sân: 10</p>
+                    </h7>
+                    <h5 class="card-title cursor-pointer mt-1">Giá : 600.000đ</h5>
+
+                    <div class="d-flex align-items-center mt-3 fs-6">
+                        <div class="cursor-pointer">
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-secondary"></i>
+                            <i class="bx bxs-star text-secondary"></i>
+                        </div>
+                        <p class="mb-0 ms-auto">3.2(124)</p>
+                    </div>
+                    <div class=" mt-2 text-center ">
+                        <button class=" btn btn-info w-100 " style="border-radius: 20px;">Đặt ngay kẻo muộn</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card m-3 border-4 border-danger" style="border-radius: 30px;">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipOVtlvXgkruGaV88gefieE3CTb4aXAY4tFuLlo1=s1360-w1360-h1020"
+                    class="card-img-top" style="border-radius: 30px;" alt="...">
+
+                <div class="card-body">
+                    <h6 class="card-title cursor-pointer">Sân bóng đá Chuyên Việt</h6>
+                    <h7 class="card-title cursor-pointer">Khu Vực: Hải Châu</h7>
+                    <h7 class="card-title cursor-pointer">
+                        <p>Số sân: 10</p>
+                    </h7>
+                    <h5 class="card-title cursor-pointer mt-1">Giá : 750.000đ</h5>
+
+                    <div class="d-flex align-items-center mt-3 fs-6">
+                        <div class="cursor-pointer">
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-secondary"></i>
+                        </div>
+                        <p class="mb-0 ms-auto">4.3(221)</p>
+                    </div>
+                    <div class=" mt-2 text-center ">
+                        <button class=" btn btn-info w-100 " style="border-radius: 20px;">Đặt ngay kẻo muộn</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="row">
         <div class="col text-center mt-4">
@@ -346,8 +466,10 @@
         </div>
     </div>
     <div>
+        <router-link to="/khach-hang/dang-ky">
         <img src="../../../assets/assets_Admin/images/bannerBongDa.png" class="card-img-top mt-4"
             style="border-radius: 30px;" alt="...">
+        </router-link>
     </div>
     <div class="row">
         <div class="col">

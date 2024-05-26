@@ -1,5 +1,6 @@
 <template>
     <div class="container">
+        <h3>Flash Sale</h3>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-4 product-grid">
             <div class="col d-flex">
                 <div class="card m-3 border-4 border-danger" style="border-radius: 30px;"><img
@@ -7,7 +8,6 @@
                         class="card-img-top" alt="..." style="border-radius: 30px;" >
                     <div class="card-body">
                         <h6 class="card-title mt-4">Cỏ nhân tạo Max </h6>
-                       
                         <h5 class="card-title cursor-pointer mt-1">Giá : 650.000đ</h5>
                         <div class="d-flex align-items-center mt-3 fs-6">
                             <div class="cursor-pointer"><i class="bx bxs-star text-warning"></i><i

@@ -6,7 +6,8 @@
                     <div class="row align-items-center">
                         <div class="col-lg-3 col-xl-2">
                             <button class="btn btn-primary mb-3 mb-lg-0" data-bs-toggle="modal"
-                                data-bs-target="#taoMoiNhanVienModal"><i class="bx bxs-plus-square"></i>Tạo Mới Nhân Viên
+                                data-bs-target="#taoMoiNhanVienModal"><i class="bx bxs-plus-square"></i>Tạo Mới Nhân
+                                Viên
                             </button>
                         </div>
                     </div>
@@ -73,7 +74,8 @@
                                 </div>
                                 <div class="modal-footer"><button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" v-on:click="TaoMoiNhanVien()">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                                        v-on:click="TaoMoiNhanVien()">
                                         Thêm Mới</button>
                                 </div>
                             </div>
@@ -116,16 +118,18 @@
                                         <td class="text-center">{{ value.ngay_bat_dau }}</td>
                                         <td>{{ value.email }}</td>
                                         <td class="text-center">
-                                            <button v-if="value.tinh_trang == 0" class="btn btn-warning">Tạm
+                                            <button v-if="value.tinh_trang == 1" v-on:click="doiTrangThai(value)"
+                                                class="btn btn-primary">Hoạt Động</button>
+                                            <button v-else v-on:click="doiTrangThai(value)" class="btn btn-warning">Tạm
                                                 Dừng</button>
-                                            <button v-if="value.tinh_trang == 1" class="btn btn-primary">Hoạt
-                                                Động</button>
                                         </td>
                                         <td class="text-center d-flex justify-content-center">
                                             <button data-bs-toggle="modal" data-bs-target="#capnhapModal"
-                                                class="btn btn-success btn-sm me-1" v-on:click="Object.assign(nhan_vien_update,value)">Cập Nhập</button>
+                                                class="btn btn-success btn-sm me-1"
+                                                v-on:click="Object.assign(nhan_vien_update, value)">Cập Nhập</button>
                                             <button data-bs-toggle="modal" data-bs-target="#deleteModal"
-                                                class="btn btn-danger btn-sm px-4" v-on:click="id_can_xoa = value.id">Xóa</button>
+                                                class="btn btn-danger btn-sm px-4"
+                                                v-on:click="id_can_xoa = value.id">Xóa</button>
                                         </td>
                                     </tr>
                                 </template>
@@ -142,12 +146,15 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <div class="alert alert-danger" role="alert"> Bạn thật sự có muốn xoá nhân viên này không? 
+                                    <div class="alert alert-danger" role="alert"> Bạn thật sự có muốn xoá nhân viên này
+                                        không?
                                     </div>
                                 </div>
                                 <div class="modal-footer"><button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Close</button>
-                                        <button v-on:click="XoaNhanVien()" type="button" class="btn btn-danger" data-bs-dismiss="modal">Xác Nhận Xoá</button>
+                                    <button v-on:click="XoaNhanVien()" type="button" class="btn btn-danger"
+                                        data-bs-dismiss="modal">Xác Nhận
+                                        Xoá</button>
                                 </div>
                             </div>
                         </div>
@@ -216,7 +223,10 @@
                                 </div>
                                 <div class="modal-footer"><button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Close</button>
-                                        <button v-on:click="CapNhatNhanVien()" type="button" class="btn btn-primary" data-bs-dismiss="modal">Cập Nhật</button></div>
+                                    <button v-on:click="CapNhatNhanVien()" type="button" class="btn btn-primary"
+                                        data-bs-dismiss="modal">Cập
+                                        Nhật</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -280,7 +290,20 @@ export default {
                     }
                 })
         },
+        doiTrangThai(xxx) {
+            axios
+                .put('http://127.0.0.1:8000/api/nhan-vien/doi-trang-thai', xxx)
+                .then((res) => {
+                    if (res.data.status == true) {
+                        toaster.success(res.data.message)
+                        this.LayDuLieu();
+                    } else {
+                        toaster.error(res.data.message)
+                    }
+                })
+        },
     },
+
 }
 </script>
 <style></style>

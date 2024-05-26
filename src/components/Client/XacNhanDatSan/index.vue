@@ -15,9 +15,9 @@
                                 style="height: 150px;width: 340px;" alt="">
                         </div>
                         <div class="col-6 mt-3">
-                            <h4>Sân bóng Đại Học Thể Dục Thể Thao</h4>
+                            <h4>Sân bóng Trương Vương</h4>
                             <p><i class="fa-solid fa-location-dot fa-xl"></i>
-                                44 Dũng Sĩ Thanh Khê Đông, Quận Thanh Khuê, Đà Nẵng</p>
+                                200 Cách Mạng Tháng Tám, Quận Cẩm Lệ, Đà Nẵng</p>
 
                         </div>
                     </div>
@@ -58,9 +58,20 @@
                                     <h4>Tổng Tiền: </h4>
                                 </div>
                                 <div class="col-6 text-end">
-                                    <h3>650.000 đ</h3>
+                                    <h3>500.000 đ</h3>
                                 </div>
                             </div>
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="col text-center">
+                                    <h5>Hoặc thanh toán bằng QR Code</h5>
+                                    <img src="../../../assets/assets_Admin/images/qrcode.png" class="card-img-top mt-4"
+                                        style="height: 200px;width: 200px;" alt="...">
+                                </div>
+
+                            </div>
+
                         </div>
                         <div class="col-12 mt-4 text-center">
                             <button type="button" class="btn btn-danger px-5" data-bs-toggle="modal"

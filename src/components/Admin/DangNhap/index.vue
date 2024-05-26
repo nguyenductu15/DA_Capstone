@@ -26,7 +26,8 @@
                                         </a> <a href="javascript:;" class="btn btn-facebook"><i
                                                 class="bx bxl-facebook"></i>Đăng nhập với Facebook</a>
                                     </div>
-                                    <div class="login-separater text-center mb-3"> <span style="font-size: 15px;">Hoặc đăng nhập với email</span>
+                                    <div class="login-separater text-center mb-3"> <span style="font-size: 15px;">Hoặc
+                                            đăng nhập với email</span>
                                         <hr>
                                     </div>
                                     <div class="form-body">
@@ -53,15 +54,14 @@
                                                         lần sau</label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6 text-end"> <a
-                                                    href="quen-mat-khau">Quên Mật Khẩu</a>
+                                            <div class="col-md-6 text-end"> <a href="quen-mat-khau">Quên Mật Khẩu</a>
                                             </div>
                                             <div class="col-12">
-                                                <router-link to="/">
-                                                <div class="d-grid">
-                                                    <button type="submit" class="btn btn-primary"><i
-                                                            class="bx bxs-lock-open"></i>Đăng Nhập</button>
-                                                </div>
+                                                <router-link to="/admin/nhan-vien">
+                                                    <div class="d-grid">
+                                                        <button type="submit" class="btn btn-primary"><i
+                                                                class="bx bxs-lock-open"></i>Đăng Nhập</button>
+                                                    </div>
                                                 </router-link>
                                             </div>
                                         </form>
